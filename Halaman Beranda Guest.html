@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Halaman Beranda Guest</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+        button {
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }
+        
+        .Judullogin{
+          text-align: center;
+          margin: 24px 0 12px 0;
+          position: relative;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+        
+        .container {
+          padding: 16px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        .modal, .modal2 {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          padding-top: 60px;
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+          background-color: #fefefe;
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 80%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #000;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: red;
+          cursor: pointer;
+        }
+        
+        /* Add Zoom Animation */
+        .animate {
+          -webkit-animation: animatezoom 0.2s;
+          animation: animatezoom 0.2s
+        }
+        
+        @-webkit-keyframes animatezoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }
+          
+        @keyframes animatezoom {
+          from {transform: scale(0)} 
+          to {transform: scale(1)}
+        }
+        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+        </style>
+</head>
+<body>
+    <div id="bungkus">
+        <div id="header">
+                <header>
+                        <nav class="kategori">
+                            <ul>
+                                <li><div class="logo"><img src="logo mang handal.png" alt=""></div></li>
+                                <div class="category">
+                                        <ul>
+                                            <li class="dropdown"><a href="#">Kategori</a>
+                                                <ul class="isi-dropdown">
+                                                    <li><a href="#">Kategori 1</a></li>
+                                                    <li><a href="#">Kategori 2</a></li>
+                                                    <li><a href="#">Kategori 3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                </div>
+                                <li>
+                                    <div class="cari">
+                                        <form class="cari1">
+                                            <input class="search" type="text" placeholder="cari....." required>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tombol">
+                                    <input class="button" type="button" value="cari">
+                                    </div>
+                                </li>    
+                            </ul>
+                        </nav>
+                        <nav>
+                            <div id="guest">
+                            <ul>
+                                <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><div id="guest1">Login</div></a></li>
+                                <li><a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><div id="guest1">Register</div></a></li>
+                            </ul>
+                            </div>
+                        </nav>
+                </header>
+            
+        </div>
+
+        <div id="content">
+            <table class="artikel">
+            <thead>
+            <th colspan="5">
+                <div class="home1">
+                <h2><img src="homePic1.png" alt=""></h2>
+                </div>
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="artikel1" colspan="5">
+                    <hr class="garis1" color=#9dc3e8 width=100% size="5px">
+                </td>
+            </tr>
+            <tr class="kata1">
+                <td class="info" colspan="5">Paling Banyak Dipesan</td>
+            </tr>
+            <tr>
+                <td><img src="sopir.png" alt=""></td>
+                <td><img src="cleaning.png" alt=""></td>
+                <td><img src="kameramen.png" alt=""></td>
+                <td><img src="ledeng.png" alt=""></td>
+                <td><img src="yoga.png" alt=""></td>
+            </tr>
+            <tr>
+                <td class="artikel1" colspan="5">
+                    <hr class="garis1" color=#9dc3e8 width=100% size="5px">
+                </td>
+            </tr>
+            <tr>
+                <td  class="info" colspan="5">MANG HANDAL - Situs Penyedia Jasa Dan Vendor Online Di Indonesia</td>
+            </tr>
+            <tr>
+                <td class="info" colspan="5">Mang Handal merupakan situs penyedia jasa dan vendor online yang kami pilihkan menjunjung professionalitas dan berpengalaman tinggi melalui berbagai proses seleksi ketat demi mengutamakan kebutuhan dan kepuasan anda </td>
+            </tr>
+
+        </tbody>
+        </table>
+        </div>
+
+        <div id="footer">
+            <footer>
+            <nav class="sosial">
+                <ul>
+                    <li id="sos1">Kami Juga Ada Di :</li>
+                    <li id="sosimg"><img src="fb.png" alt=""></li>
+                    <li id="sosimg"><img src="ig.png" alt=""></li>
+                    <li id="sosimg"><img src="yt.png" alt=""></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a href="#">Pusat Bantuan</a></li>
+                    <li><a href="#">Kontak Kami</a></li>
+                </ul>
+            </nav> 
+        </footer> 
+        </div>
+    </div>
+
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="Judullogin">
+            <p>Login Ke MangHandal</p>
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Masukkan Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Masukkan Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Ingat aku
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Batal</button>
+            <span class="psw">Lupa <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+<div id="id02" class="modal2">
+    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+        <h1>Daftar Ke MangHandal</h1>
+        <p>Isi form di bawah ini, untuk membuat akun</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Masukkan Email" name="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Masukkan Password" name="psw" required>
+  
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Ulangi Password" name="psw-repeat" required>
+        
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+  
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Batal</button>
+          <button type="submit" class="signupbtn">Daftar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  var modal2 = document.getElementById('id02');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal2) {
+      modal2.style.display = "none";
+    }
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+</body>
+</html>
